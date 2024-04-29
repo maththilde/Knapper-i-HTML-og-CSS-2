@@ -1,176 +1,101 @@
 * {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
 
-section {
-  border: 1px solid black;
-  min-height: 200px;
-  gap: 20px;
+div {
   margin-bottom: 100px;
-  padding: 20px;
 }
 
-article {
-  width: 200px;
-  height: 150px;
-  background-color: purple;
-}
-
-/*side 1*/
-.flex-start {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-space-between {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-space-around {
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-space-evenly {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/*side 2*/
-.items-flex-start {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.items-flex-start article:nth-child(1) {
-  height: 180px;
-}
-.items-flex-start article:nth-child(2) {
-  height: 130px;
-}
-.items-flex-start article:nth-child(3) {
-  height: 150px;
-}
-
-.items-flex-end {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.items-flex-end article:nth-child(1) {
-  height: 180px;
-}
-.items-flex-end article:nth-child(2) {
-  height: 130px;
-}
-.items-flex-end article:nth-child(3) {
-  height: 150px;
-}
-
-.items-flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.items-flex-center article:nth-child(1) {
-  height: 180px;
-}
-.items-flex-center article:nth-child(2) {
-  height: 130px;
-}
-.items-flex-center article:nth-child(3) {
-  height: 150px;
-}
-
-.items-flex-stretch {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
-.items-flex-stretch article:nth-child(1) {
-  height: auto;
-}
-.items-flex-stretch article:nth-child(2) {
-  height: auto;
-}
-.items-flex-stretch article:nth-child(3) {
-  height: auto;
-}
-
-.items-flex-baseline {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
-.flex-baseline1 {
-  font-size: 35px;
-  color: white;
-  background-color: purple;
-  padding: 130px 125px 155px 99px;
-}
-
-.flex-baseline2 {
-  font-size: 35px;
-  color: white;
-  background-color: purple;
-  padding: 159px 112px 50px 112px;
-}
-.flex-baseline3 {
-  font-size: 35px;
-  color: white;
-  background-color: purple;
-  padding: 89px 126px 177px 98px;
-}
-
-/*side 3*/
-.items-flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.items-flex-row-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.items-flex-column {
+body {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
-  height: 650px;
+  align-items: center;
 }
 
-.items-flex-column-reverse {
-  display: flex;
-  flex-direction: column-reverse;
-  border: 2px solid black;
-  height: 650px;
+html {
+  font-size: 62.5%;
 }
 
-/*side 4*/
-.items-flex-wrap-no-wrap {
-  display: flex;
-  flex-wrap: nowrap;
+.btn-default {
+  color: #d800ff;
+  text-decoration: none;
+  font-size: 40px;
 }
 
-.items-flex-wrap-wrap {
-  display: flex;
-  flex-wrap: wrap;
+.btn-default:hover {
+  color: #82029a;
 }
 
-.items-flex-wrap-wrap-reverse {
-  display: flex;
-  flex-wrap: wrap-reverse;
+.btn-square {
+  display: inline-block;
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  width: 252px;
+  height: 81px;
+  background-color: #d800ff;
+  text-align: center;
+  line-height: 81px;
+}
+
+.btn-square:hover {
+  background-color: #82029a;
+}
+
+.btn-border-radius {
+  display: inline-block;
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  width: 252px;
+  height: 81px;
+  background-color: #d800ff;
+  text-align: center;
+  line-height: 81px;
+  border-radius: 20px;
+}
+
+.btn-border-radius:hover {
+  background-color: #82029a;
+}
+
+.btn-box-shadow {
+  display: inline-block;
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  width: 252px;
+  height: 81px;
+  background-color: #d800ff;
+  text-align: center;
+  line-height: 81px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px black;
+}
+
+.btn-box-shadow:hover {
+  background-color: #82029a;
+}
+
+.btn-linear-gradient {
+  display: inline-block;
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  width: 252px;
+  height: 81px;
+  background-color: #d800ff;
+  text-align: center;
+  line-height: 81px;
+  border-radius: 40px;
+  box-shadow: 0px 3px 6px black;
+  background: linear-gradient(#d800ff, #82029a);
+}
+
+.btn-linear-gradient:hover {
+  background-color: #82029a;
+  box-shadow: 0px -3px 6px black;
+  background: linear-gradient(#82029a, #d800ff);
 }
